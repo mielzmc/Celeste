@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="Celeste.css" />
+    <link rel="shortcut icon" href="Conteudos/Celeste.ico" type="image/x-icon">
+    <title>Celeste</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Texto -->
+        <h1>Aurora Celeste</h1>
+
+        <p class="texto">
+            Hoje eu encontrei tudo o que eu sempre sonhei, a garota mais bela e graciosa. 
+            É tão especial estar em cada segundo ao seu lado, poder sorrir com você e sentir o seu amor. 
+            <br><br>
+            A cada dia que passa, eu tenho mais certeza de que você foi a melhor escolha da minha vida. 
+            Eu te amo, Mayara &lt;3
+        </p>
+
+        <h2>Estamos juntos há:</h2>
+
+        <!-- Caixas -->
+        <p id="timer"></p>
+
+        <!-- Fotos -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <img id="left-img" class="side-img" />
+                <img id="center-img" class="center-img" />
+                <img id="right-img" class="side-img" />
+            </div>
+
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+
+        <!-- Player de música -->
+        <div class="music-player">
+            <img class="cover" src="Conteudos/Deixa - Lagum feat Ana Gabriela.jpg" alt="Capa do Álbum">
+
+            <audio 
+                id="audioPlayer" 
+                src="Conteudos/Deixa - Lagum feat Ana Gabriela.mp3" 
+                autoplay 
+                muted>
+            </audio>
+
+            <div class="center-info">
+                <div class="title">
+                    Deixa – Lagum<br>
+                    <small>feat. Ana Gabriela</small>
+                </div>
+
+                <div class="time-row">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">2:56</span>
+                </div>
+
+                <div class="progress-container" id="progressContainer">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+            <button id="playBtn" class="play-btn"><svg width="26" height="26" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            </button>
+        </div>
+
+    </div>
+
+    <script src="Celeste.js"></script>
+</body>
+</html>
